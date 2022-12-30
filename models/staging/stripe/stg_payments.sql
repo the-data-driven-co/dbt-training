@@ -1,5 +1,5 @@
 with source as (
-    {{ source('stripe', 'payment') }}
+    select * from {{ source('stripe', 'payment') }}
 )
 
 staged as (
